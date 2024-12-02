@@ -1,0 +1,100 @@
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+.App {
+  font-family: sans-serif;
+  text-align: center;
+  height: 100vh;
+}
+#header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: red;
+  padding: 10px;
+}
+
+#mainnumberbox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.numberbox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: yellow;
+  width: 45%;
+  height: 150px;
+  margin-top: 20px;
+}
+
+.numberbox:nth-child(2) {
+  background-color: blue;
+}
+
+.numberbox:nth-child(3) {
+  background-color: green;
+}
+
+.numberbox:nth-child(4) {
+  background-color: red;
+}
+
+#tasklist {
+  width: 100%;
+  height: 200px;
+  margin-top: 5px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 5px;
+  flex-wrap: nowrap;
+  overflow: auto;
+  margin: 10px;
+}
+
+#tasklist::-webkit-scrollbar {
+  display: none;
+}
+
+.task {
+  width: 170px;
+  height: 80%;
+  background-color: yellow;
+  flex-shrink: 0;
+}
+.taskitem {
+  display: flex;
+  justify-content: space-between;
+}
+
+.taskitem + h2 {
+  font-size: 10px;
+}
+
+.taskitem + h2 + p {
+  font-size: 10px;
+}
+
+#alltask {
+  margin-top: 5px;
+  width: 100%;
+  background-color: black;
+  padding: 5px;
+  overflow: auto;
+}
+
+.eachtask {
+  background-color: red;
+  display: flex;
+  justify-content: space-around;
+  margin: 3px;
+}
